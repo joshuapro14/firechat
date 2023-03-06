@@ -1,0 +1,36 @@
+.bar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    scrollbar-width: thin;
+}
+
+.scrollableBar{
+    overflow-y: auto;
+    /* padding-left: 0.5rem; */
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+    /* padding: 0.75rem; */
+}
+/* .scrollableBar::-webkit-scrollbar {
+    width: 1rem;
+} */
+
+.box{
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--ternary-color);
+    width: 100%;
+    min-height: 50rem;
+}
+.box:hover{
+    background-color: var(--ternary-color2);
+}
+.box:first-child{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.box:last-child{
+    border-radius: 0 0 0.5rem 0.5rem;
+    
+}

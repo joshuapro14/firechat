@@ -1,0 +1,13 @@
+.input {
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.input:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}

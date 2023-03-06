@@ -1,0 +1,127 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: var(--container-border-radius);
+    width: 55vw;
+}
+
+.chatTitle{
+    color: var(--action-color);
+    font-weight: bold;
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.loginTitle{
+    font-size: 1.5rem;
+}
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 95%;   
+    
+}
+
+.input{
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+}
+
+/* input::placeholder{
+    color: grey;
+} */
+
+.actionBox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.registerBtn{
+    width: fit-content;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--action-color);
+    color: var(--action-fore-color);
+    font-weight: normal;
+    border: none;
+}
+
+.registerBtn:hover{
+    background-color: var(--action-color-2);;
+}
+
+.registerBtn:disabled {
+    background-color: grey;
+    color: black;
+    cursor:not-allowed;
+}
+
+.passwordBox{
+    max-width: 100%;
+    display: flex;    
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    background-color: whitesmoke;
+}
+
+.passwordBox .input{
+    width: 100%;
+}
+
+.passwordInput{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.centerPara{
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .loginBox{
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .loginBox{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .loginBox{
+        width: 90vw;
+    }
+}
+
+
+
+

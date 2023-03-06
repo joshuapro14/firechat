@@ -1,0 +1,17 @@
+.invalidBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    align-items: flex-start;
+    justify-content: start;
+    
+    
+    font-size: 1rem;
+}
+
+.invalidBox span{
+    background-color: crimson;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}

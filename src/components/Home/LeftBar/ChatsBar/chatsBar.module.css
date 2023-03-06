@@ -1,0 +1,73 @@
+.container{
+    border: none;
+    background-color: var(--ternary-color);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-bottom: 0.1rem solid black;
+    /* gap: 0.2rem; */
+    padding: 0.75rem;
+    background-color: var(--ternary-color2);
+    font-size: 1.25rem;
+    cursor: pointer;
+    
+}
+
+.chat:first-child{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.chat:last-child{
+    border-radius: 0 0 0.5rem 0.5rem;
+    border-bottom: none;
+}
+
+.chat:first-child:last-child{
+    border-radius: 0.5rem;
+}
+
+.chat:hover{
+    background-color: var(--ternary-color3);
+    color: var(--main-font-color);
+}
+
+.selected,.selected:hover{
+    /* background-color: var(--secondary-color); */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.lastMessageBox{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    /* border-top: 1px solid; */
+    padding: 0.5rem;
+    
+    /* margin-top: 0.5rem; */
+}
+
+.lastMessage{
+    /* word-wrap: break-word;
+    word-break: break-all; */
+    /* display: flex;
+    flex-direction: row;
+    overflow: hidden; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 14rem;
+}
+
+.timestamp{
+    
+    border: none;
+}
+

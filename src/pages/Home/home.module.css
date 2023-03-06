@@ -1,0 +1,51 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+.chatContainer{
+    display: flex;
+    flex-direction: row;
+    /* gap: 0.75rem; */
+    /* padding: 0.5rem; */
+    background-color: var(--secondary-color);
+   /* background-color: gainsboro; */
+    border-radius: var(--container-border-radius);
+    width: 85vw;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.chatLeft{
+    flex: 1;
+    /* border-right: 2px solid black;     */
+}
+
+.chatRight{
+    flex: 2;
+    /* border-left: 2px solid black; */
+}
+
+@media  screen and (max-width: 720px) {
+    /* .chatRight, .chatLeft{
+        display: none;
+    } */
+    .chatLeft.showSideBar{
+        display: block;
+        /* justify-content: center;
+        width: 100%;
+        flex-grow: inherit; */
+    }
+    .chatLeft.hideSideBar{
+        display: none;
+    }
+    .chatRight.hideSideBar{
+        display: block;
+    }
+    .chatRight.showSideBar{
+        display: none;
+    }
+}

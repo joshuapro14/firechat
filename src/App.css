@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --primary-color: darkseagreen;
+    /* --secondary-color: #00203FFF; */
+    --secondary-color: #00203FFF;
+    --ternary-color: rgb(8, 45, 82);
+    --ternary-color2: rgb(13, 58, 104);
+    --ternary-color3: rgb(18, 66, 114);
+    --action-color: goldenrod;
+    --action-color-2: gold;
+    --action-fore-color: black;
+    --main-font-color: #ADEFD1FF;
+    --container-border-radius: 0.95rem;
+    color: var(--main-font-color);
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+    font-family: monospace;
+
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--action-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    
+}
+
+*::-webkit-scrollbar-track {
+    /* background: orange; */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--action-color);
+    border-radius: 20px;
+   /*  border: 3px solid orange; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+button {
+    width: fit-content;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: var(--action-color);
+    color: var(--action-fore-color);
+    font-weight: normal;
+    border: none;
+
+}
+
+button:hover {
+    background-color: var(--action-color-2);
+}
+
+button:disabled {
+    background-color: grey;
+    color: black;
+    cursor: not-allowed;
+}
+
+input::placeholder {
+    color: blue;
+
+}
+
+.unknown-test {
+    color: goldenrod;
+}

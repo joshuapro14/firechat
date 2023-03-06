@@ -1,0 +1,12 @@
+.bar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 100%;
+    scrollbar-width: thin;
+    justify-content: space-between;
+}
+
+.scrollableBar{
+    overflow-y: auto;
+}
